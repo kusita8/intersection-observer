@@ -1,0 +1,27 @@
+header {
+    position: fixed;
+    display: block;
+    top: 0;
+    width: 100%;
+    z-index: 10;
+    background: rgba(300, 300, 300, 0);
+
+    transition: background 300ms ease;
+
+    .header-container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 15px 0px;
+        width: 80vw;
+        margin: 0 auto;
+
+        h1 {
+            font-size: 20px;
+        }
+
+        span {}
+
+    }
+
+}

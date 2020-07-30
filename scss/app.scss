@@ -1,0 +1,49 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap');
+@import 'variables.scss';
+@import 'animations.scss';
+@import 'header.scss';
+@import 'categories.scss';
+@import 'hero.scss';
+@import 'jobs.scss';
+
+*,
+*::before,
+*::after {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+
+html {
+    font-family: 'Roboto', sans-serif;
+    background: $background;
+    height: 500vh;
+}
+
+
+.title-container {
+    width: 80vw;
+    margin: 100px auto 50px;
+    overflow: hidden;
+    opacity: 0;
+
+    &.animate {
+        opacity: 1;
+
+        span {
+            display: inline-block;
+            animation: title .8s ease;
+            animation-fill-mode: backwards;
+
+            &:nth-of-type(2) {
+                animation-delay: .2s;
+            }
+        }
+    }
+
+
+    h1 {
+        font-size: 50px;
+    }
+}

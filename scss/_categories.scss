@@ -1,0 +1,60 @@
+.categories-container {
+    width: 80vw;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+
+    &.animate {
+
+        @for $i from 1 through 9 {
+
+            .category-item {
+
+                &:nth-of-type(#{$i}) {
+                    animation: pop 1s ease;
+                    animation-fill-mode: backwards;
+                    animation-delay: $i * 200ms + 300ms;
+                    opacity: 1;
+
+                    span {
+                        animation: text .8s ease;
+                        animation-fill-mode: backwards;
+                        animation-delay: $i * 200ms + 900ms;
+
+                        &:nth-of-type(2) {
+                            animation-delay: $i * 200ms + 1100ms;
+                        }
+
+                    }
+
+                }
+
+
+            }
+        }
+
+    }
+
+    .category-item {
+        background: white;
+        min-width: 150px;
+        width: 19%;
+        height: 170px;
+        margin-bottom: 10px;
+        margin-right: 10px;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: flex-end;
+        padding: 40px 20px;
+        opacity: 0;
+
+        &:nth-child(6) {
+            margin-left: 20%;
+        }
+
+        span {
+            display: block;
+        }
+    }
+}
