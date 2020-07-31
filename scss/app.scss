@@ -1,6 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap');
 @import 'variables.scss';
-@import 'animations.scss';
 @import 'header.scss';
 @import 'categories.scss';
 @import 'hero.scss';
@@ -26,7 +25,6 @@ html {
     width: 80vw;
     margin: 100px auto 50px;
     overflow: hidden;
-    opacity: 0;
 
     h1 {
         font-size: 50px;
