@@ -4,37 +4,6 @@
     display: flex;
     flex-wrap: wrap;
 
-    &.animate {
-
-        @for $i from 1 through 9 {
-
-            .category-item {
-
-                &:nth-of-type(#{$i}) {
-                    animation: pop 1s ease;
-                    animation-fill-mode: backwards;
-                    animation-delay: $i * 200ms + 300ms;
-                    opacity: 1;
-
-                    span {
-                        animation: text .8s ease;
-                        animation-fill-mode: backwards;
-                        animation-delay: $i * 200ms + 900ms;
-
-                        &:nth-of-type(2) {
-                            animation-delay: $i * 200ms + 1100ms;
-                        }
-
-                    }
-
-                }
-
-
-            }
-        }
-
-    }
-
     .category-item {
         background: white;
         min-width: 150px;

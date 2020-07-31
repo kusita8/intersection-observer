@@ -6,8 +6,6 @@ header {
     z-index: 10;
     background: rgba(300, 300, 300, 0);
 
-    transition: background 300ms ease;
-
     .header-container {
         display: flex;
         justify-content: space-between;
